@@ -1,3 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+<<<<<<< HEAD
+title = 'Enny Site'
+=======
+title = 'Enny Site'
+theme = "ananke"
+>>>>>>> 6e55bb2 (Add Hugo project and CI/CD workflow)
