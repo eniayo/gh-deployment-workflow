@@ -10,5 +10,7 @@ DevOps Engineer with **4+ years** of experience building scalable cloud infrastr
 - Cloud Architecture (AWS, GCP, HUAWEI)  
 - Kubernetes & Docker Swarm  
 - Infrastructure as Code (Terraform, Ansible)  
-- Monitoring (Prometheus, Grafana, ELK)  
+- Monitoring (Prometheus, Grafana, ELK) 
+
+Gracias
 
