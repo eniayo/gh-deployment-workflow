@@ -7,7 +7,7 @@ draft = true
 
 DevOps Engineer with **4+ years** of experience building scalable cloud infrastructure and automating CI/CD pipelines.  
 **Core Skills**:  
-- Cloud Architecture (AWS, GCP)  
+- Cloud Architecture (AWS, GCP, HUAWEI)  
 - Kubernetes & Docker Swarm  
 - Infrastructure as Code (Terraform, Ansible)  
 - Monitoring (Prometheus, Grafana, ELK)  
