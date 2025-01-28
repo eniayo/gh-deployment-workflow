@@ -1,8 +1,4 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-<<<<<<< HEAD
-title = 'Enny Site'
-=======
-title = 'Enny Site'
+baseURL = "https://eniayo.github.io/gh-deployment-workflow/"
+languageCode = "en-us"
+title = "Enny's Site"
 theme = "ananke"
->>>>>>> 6e55bb2 (Add Hugo project and CI/CD workflow)
