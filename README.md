@@ -1,34 +1,50 @@
-##GitHub Pages Deployment Workflow
-Overview
-This project demonstrates the concept of continuous integration and continuous deployment (CI/CD) by using GitHub Actions to deploy a static website to GitHub Pages. The workflow is triggered by changes to the index.html file in the main branch.
+# Log Archive Tool
 
-Features
-Automatic Deployment: Deploys changes to GitHub Pages whenever index.html is updated.
+## GitHub Pages Deployment Workflow
 
-Continuous Integration: Ensures that any changes made to the index.html file are automatically integrated and deployed.
+### Overview
+This project demonstrates the concept of **Continuous Integration and Continuous Deployment (CI/CD)** by using **GitHub Actions** to deploy a static website to **GitHub Pages**. The workflow is triggered by changes to the `index.html` file in the `main` branch.
 
-Requirements
-A GitHub account
+### Features
+- **Automatic Deployment**: Deploys changes to GitHub Pages whenever `index.html` is updated.
+- **Continuous Integration**: Ensures that any changes made to `index.html` are automatically integrated and deployed.
 
-A public GitHub repository
+---
 
-Getting Started
-Step 1: Create a GitHub Repository
-Create a new public repository on GitHub called gh-deployment-workflow.
+## Requirements
+- A **GitHub account**
+- A **public GitHub repository**
 
-Add a simple index.html file with the content "Hello, GitHub Actions!".
+---
 
-Add a README.md file explaining the project.
+## Getting Started
 
-Step 2: Create GitHub Actions Workflow
-In your repository, create a directory called .github/workflows.
+### Step 1: Create a GitHub Repository
+1. Create a new **public repository** on GitHub called `gh-deployment-workflow`.
+2. Add a simple `index.html` file with the content:
 
-Inside the workflows directory, create a file named deploy.yml.
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>GitHub Actions Deployment</title>
+    </head>
+    <body>
+        <h1>Hello, GitHub Actions!</h1>
+    </body>
+    </html>
+    ```
 
-Example deploy.yml
-Add the following content to the deploy.yml file:
+3. Add a `README.md` file explaining the project.
 
-yaml
+---
+
+### Step 2: Create GitHub Actions Workflow
+1. In your repository, create a directory called `.github/workflows`.
+2. Inside the `workflows` directory, create a file named `deploy.yml`.
+
+#### Example `deploy.yml`
+```yaml
 name: Deploy to GitHub Pages
 
 on:
@@ -61,36 +77,58 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
-          https://roadmap.sh/projects/github-actions-deployment-workflow
-Step 3: Push Changes to GitHub
-Push your changes to the main branch of your repository.
+```
 
-Example Commands
-bash
+> **Note:** This workflow triggers a deployment whenever the `index.html` file is modified in the `main` branch.
+
+---
+
+### Step 3: Push Changes to GitHub
+Run the following commands in your terminal to initialize the repository and push changes:
+
+```bash
 git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
 git remote add origin https://github.com/yourusername/gh-deployment-workflow.git
 git push -u origin main
-Step 4: Access Your Website
-After the workflow runs successfully, your website will be accessible at https://<username>.github.io/gh-deployment-workflow/.
+```
 
-Stretch Goals
-To make this project more practical, consider using a static site generator such as Hugo, Jekyll, Astro, or a similar generator to create a more complex website, such as your personal portfolio.
+> **Replace `yourusername`** with your actual GitHub username.
 
-Learning Outcomes
+---
+
+### Step 4: Access Your Website
+Once the workflow runs successfully, your website will be accessible at:
+
+```
+https://<username>.github.io/gh-deployment-workflow/
+```
+
+> **Replace `<username>`** with your actual GitHub username.
+
+---
+
+## Stretch Goals
+To make this project more practical, consider using a **static site generator** such as:
+- **Hugo**
+- **Jekyll**
+- **Astro**
+
+This will allow you to create a **more complex website**, such as your personal **portfolio**.
+
+---
+
+## Learning Outcomes
 By completing this project, you will gain a solid understanding of:
+- **GitHub Actions**
+- **GitHub Pages**
+- **Continuous Integration (CI)**
+- **Continuous Deployment (CD)**
+- **Writing GitHub Actions workflows**
 
-GitHub Actions
+---
 
-GitHub Pages
-
-Continuous Integration (CI)
-
-Continuous Deployment (CD)
-
-Writing GitHub Actions workflows
-
-License
-This project is licensed under the MIT License
+## License
+This project is licensed under the **MIT License**.
